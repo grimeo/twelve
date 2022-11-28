@@ -1,0 +1,39 @@
+@import 'main.css';
+
+body{background-color: #333;
+    color: white;
+    background: url('../imgs/front-bg.jpg');
+    overflow-x: hidden;
+}
+
+.warp-speed-bg {
+    width: 200px;
+    height: 4px;    
+    transform: translate3d(-200px,0,0);
+    background-color: whitesmoke;
+    animation: warp-speed;
+} 
+
+#warpspeed1{
+    transform: translate3d(-400px,0,0);
+    animation: warp-speed 2.5s linear infinite;
+}
+#warpspeed2{
+    transform: translate3d(-1200px,0,0);
+    animation: warp-speed 3.8s linear infinite;
+}
+#warpspeed3{
+    transform: translate3d(-800px,0,0);
+    animation: warp-speed 2.4s linear infinite;
+}
+#warpspeed4{
+    transform: translate3d(-600px,0,0);
+    animation: warp-speed 1.8s linear infinite;}
+#warpspeed5{
+    transform: translate3d(-1000px,0,0);
+    animation: warp-speed 3s linear infinite;
+}
+@keyframes warp-speed {
+    0%{}
+    100%{transform: translate3d(calc(100vw + 200px),0,0);} 
+}
