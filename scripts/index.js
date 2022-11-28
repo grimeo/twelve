@@ -68,6 +68,8 @@ const validate = () => {
     else if(username.value == JSON.parse(userfromlocal)[0]
     && password.value == JSON.parse(userfromlocal)[1]){
         window.location.href ='home.html'
+        username.value = '';
+        password.value = '';
     }
     else {
         console.log('ERRORRRRRR')
@@ -82,12 +84,16 @@ username.addEventListener('keypress', (e) => {if(e.key === 'Enter'){validate();}
 // =================== login modal ===================
 nav_login_btn.addEventListener('click', () => {form_modal.style.display = "block";})
 modalform_exit_btn.addEventListener('click', () => { 
+    username.value = '';
+    password.value = '';
     err_password_element.innerHTML = '';
     err_username_element.innerHTML = '';
     form_modal.style.display = 'none';
 })
 window.onclick = (e) => {
     if(e.target == form_modal){
+        username.value = '';
+        password.value = '';
         err_password_element.innerHTML = '';
         err_username_element.innerHTML = '';
         form_modal.style.display = 'none';
