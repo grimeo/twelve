@@ -1,5 +1,8 @@
 @import 'main.css';
 
+body{
+    background: url('../imgs/front-bg.jpg');
+}
 #front{
     display: block;
     width: 100%;
@@ -317,42 +320,102 @@
 .page-title{
     text-align: center;
     color: whitesmoke;
+    font-size: 50px;
 }
 
 #about-container{
     width:100%;
     height: 100vh;
-    background: url('../imgs/front-bg.jpg');
+    background-color: rgba(0,0,0,.5);
+    /* background: url('../imgs/front-bg.jpg'); */
 }
     #about-wrapper{
         width: 940px;
         height:500px;
-        border: 1px solid red;
         -ms-transform: translate3d(calc(calc(100vw - 940px) / 2), calc(calc(100vh - 500px) / 2), 0);
         transform: translate3d(calc(calc(100vw - 940px) / 2), calc(calc(100vh - 500px) / 2), 0);
+    }
+    .left,
+    .right {
+        display: inline-block;
+        vertical-align: top;
+        width: 49.5%;
+        height: 400px;
+        padding: 30px;
+        font-size: 18px;
+    }
+    .left p {
+        display: block;
+        text-align:justify;
+        text-indent: 50px;
+        font-size: 25px;
+        margin-top: 20px;
+        color: whitesmoke
+    }
+    #twelve-logo{
+        color: whitesmoke;
+        border: 5px solid white;
+        border-radius: 5px;
+        font-size: 80px;
+        text-align: center;
+        margin-top: 80px;
     }
 
 #project-container{
     width:100%;
     height: 100vh;
-    background: url('../imgs/front-bg.jpg');
+    background-color: rgba(0,0,0,.4);
 }
     #project-content{
         width: 940px;
         height:500px;
-        border: 1px solid red;
         -ms-transform: translate3d(calc(calc(100vw - 940px) / 2), calc(calc(100vh - 500px) / 2), 0);
         transform: translate3d(calc(calc(100vw - 940px) / 2), calc(calc(100vh - 500px) / 2), 0);
     }
         .projects{
             display: inline-block;
+            vertical-align: top;
             width: 250px;
             height: 350px;
-            border: 1px solid red;
-            -ms-transform: translate3d(0, calc(calc(500px - 350px) / 2), 0);
-            transform: translate3d(0, calc(calc(500px - 350px) / 2), 0);
+            border: 2px solid White;
+            background-color: rgba(0,0,0,.4);
+            border-radius: 15px;
+            margin-top: 50px;
             margin-left: 47.5px;
         }
+        .projects p{
+            color: whitesmoke;
+            padding: 10px;
+            text-align: center;
+        }   
+            #try{
+                display: inline-block;
+
+                color: #272727;
+                background-color: #1af025;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 2px 5px;
+            }
+        .proj-img-container{
+            display: block;
+            border: 1px solid white;
+            border-radius: 10px;
+            overflow: hidden;
+            margin:auto;
+            width: 90%;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+            #project-title-1,
+            #project-title-2,
+            #project-title-3{
+                color: whitesmoke;
+                padding:10px;
+                text-align: center;
+            }
 
         
 #contributors-container{
